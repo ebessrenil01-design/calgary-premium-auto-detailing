@@ -1,0 +1,51 @@
+# Calgary Premium Auto Detailing | Mangaluru
+
+> Premium automotive detailing studio in Padil, Mangaluru, Karnataka, India. Precision in every detail.
+
+## Brand & Location
+- **Business Name**: Calgary Premium Auto Detailing
+- **Location**: Near Padil Junction, Bypass Road, Padil, Mangaluru, Karnataka 575007, India
+- **Coordinates**: Latitude 12.8688, Longitude 74.8770
+- **Phone & WhatsApp**: +91 97456 03303 (Confirmed business line)
+- **Instagram**: https://www.instagram.com/calgary_mangalore/ (@calgary_mangalore)
+- **Tagline**: PREMIUM AUTOMOTIVE CARE. PRECISION IN EVERY DETAIL.
+- **Operating Hours**: Monday – Saturday: 9:00 AM – 7:30 PM (Sunday by Appointment)
+- **Primary Inquiry Channel**: WhatsApp (+91 97456 03303 direct message for tailored detailing quotes)
+
+---
+
+## Detailing Services Catalog (5 Core Services)
+_Note: Service duration and vehicle collection depend on the selected service and the vehicle's condition. Contact Calgary Premium Auto Detailing for a personalised quotation and scheduling._
+
+### 01. Wash — Snow Foam Wash & Decontamination
+- **Professional Snow Foam Wash & Decontamination**: Contactless pH-neutral snow foam soak, two-bucket scratch-free hand wash, wheel barrel iron fallout removal, door jambs cleaning, tire satin dressing. Duration: Vehicle condition & scope dependent. Pricing: Custom quote based on vehicle size & surface condition.
+
+### 02. PPF — Paint Protection Film (TPU Armor)
+- **Self-Healing Paint Protection Film (PPF - TPU Armor)**: Optical-grade TPU rock chip, stone gravel, and scratch shield with heat-activated self-healing topcoat. Duration: Vehicle condition & scope dependent. **Included Perk: 1 Free Studio Maintenance Wash Once Every Month.** Pricing: Custom quote based on coverage package (Front Clip, High-Impact, or Full Vehicle).
+
+### 03. Ceramic — Nano-Ceramic Coating Protection
+- **Nano-Ceramic Coating Protection (SiO2 3-Year & 5-Year)**: Semi-permanent 9H nano-ceramic layer delivering extreme hydrophobicity, UV resistance, and chemical defense against coastal Mangaluru rain & salt air. Duration: Vehicle condition & scope dependent. **Included Perk: 1 Free Studio Maintenance Wash Once Every Month.** Pricing: Custom quote based on vehicle segment & warranty.
+
+### 04. Paint — Multi-Stage Paint Correction & Polishing
+- **Multi-Stage Paint Correction & Polishing**: Precision dual-action and rotary machine leveling to eliminate 85% to 95% of swirl marks, buffer trails, towel scratches, and oxidation without fillers. Includes digital paint depth audit. Duration: Vehicle condition & scope dependent. Pricing: Tailored quote following paint depth inspection.
+
+### 05. Interior — Deep Interior Detailing & Sanitization
+- **Deep Interior Detailing & Sanitization**: High-power vacuuming, hot-water / steam upholstery extraction, pH-balanced leather cleansing & UV conditioning, AC evaporator vent disinfection, germ-free deodorization. Duration: Vehicle condition & scope dependent. Pricing: Custom quote based on cabin size & stain severity.
+
+### Complimentary Studio Audit
+- **Complimentary Surface Inspection**: Free 20-minute digital paint depth gauge check, high-CRI LED swirl-finder audit, and transparent written service proposal. Complimentary (₹0 / Zero Charge).
+
+---
+
+## The Calgary Process (Three Stages)
+1. **Stage 01 — Consultation**: Surface and paint depth audit, defect mapping, and personalized detailing protocol.
+2. **Stage 02 — Execution**: Climate-timed machine correction, swirl removal, and cleanroom ceramic application in the Padil studio bay.
+3. **Stage 03 — Quality Inspection**: 360-degree high-CRI inspection under multi-angle light bars before handover.
+
+---
+
+## Technical Architecture & Inquiry Flow
+- **Framework**: React 19 SPA with TypeScript and Vite
+- **Styling**: Tailwind CSS v4 with custom dark mode (#0C0C0C) and Kanit Google Font
+- **Customer Inquiry System**: Adaptive 5-step questionnaire capturing service category, vehicle segment (Hatchback / Sedan / Compact SUV / Full SUV / Luxury), current paint/cabin condition, Mangaluru neighborhood, and generating structured WhatsApp payloads opening to +91 97456 03303.
+- **Persistence & Automation**: Local client-side storage (`calgary_customer_inquiries_v1`) with reference IDs (CLG-2026-XXXX), built-in Inquiry Tracker drawer, and modular webhook stub for future WhatsApp Business Cloud API / CRM integration.

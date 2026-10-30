@@ -1,0 +1,5 @@
+# Calgary Premium Auto Detailing - Padil, Mangaluru
+User-agent: *
+Allow: /
+
+Sitemap: https://calgary-detailing.com/sitemap.xml
