@@ -104,7 +104,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             onClick={() => setActiveTab('all')}
             className={`px-4 py-2 rounded-full text-xs uppercase tracking-wider font-semibold transition-all cursor-pointer ${
               activeTab === 'all'
-                ? 'bg-[#0C0C0C] text-white shadow-md'
+                ? 'bg-[#0C0C0C] text-white'
                 : 'bg-black/5 text-slate-700 hover:bg-black/10'
             }`}
           >
@@ -118,7 +118,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
               onClick={() => setActiveTab(cat.id)}
               className={`px-4 py-2 rounded-full text-xs uppercase tracking-wider font-semibold transition-all cursor-pointer ${
                 activeTab === cat.id
-                  ? 'bg-[#0C0C0C] text-white shadow-md'
+                  ? 'bg-[#0C0C0C] text-white'
                   : 'bg-black/5 text-slate-700 hover:bg-black/10'
               }`}
             >
@@ -243,7 +243,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                     <button
                       type="button"
                       onClick={() => onSelectService?.(service.name)}
-                      className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-[#0C0C0C] hover:bg-black text-white text-xs uppercase tracking-widest font-semibold transition-all cursor-pointer shadow-md active:scale-95 whitespace-nowrap"
+                      className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-[#0C0C0C] hover:bg-black text-white text-xs uppercase tracking-widest font-semibold transition-all cursor-pointer active:scale-95 whitespace-nowrap"
                     >
                       <span>Inquire Now</span>
                       <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -272,7 +272,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
           <button
             type="button"
             onClick={() => onSelectService?.('Complimentary Surface Inspection & Custom Quote')}
-            className="px-6 py-3 rounded-full bg-[#D7E2EA] hover:bg-white text-[#0C0C0C] font-bold text-xs uppercase tracking-widest transition-all cursor-pointer shrink-0 shadow-md active:scale-95"
+            className="px-6 py-3 rounded-full bg-[#D7E2EA] hover:bg-white text-[#0C0C0C] font-bold text-xs uppercase tracking-widest transition-all cursor-pointer shrink-0 active:scale-95"
           >
             Book Free Studio Audit
           </button>

@@ -166,7 +166,7 @@ export const InquiryTrackerModal: React.FC<InquiryTrackerModalProps> = ({
                       onClose();
                       onOpenNewBooking();
                     }}
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#D7E2EA] hover:bg-white text-[#0C0C0C] font-semibold text-xs uppercase tracking-widest transition-all cursor-pointer shadow-md"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#D7E2EA] hover:bg-white text-[#0C0C0C] font-semibold text-xs uppercase tracking-widest transition-all cursor-pointer"
                   >
                     <MessageSquare className="w-4 h-4" />
                     <span>Start New Detailing Inquiry</span>
@@ -191,7 +191,7 @@ export const InquiryTrackerModal: React.FC<InquiryTrackerModalProps> = ({
                         onClick={() => setSelectedInquiry(inq)}
                         className={`w-full text-left p-3.5 rounded-2xl transition-all cursor-pointer border ${
                           isSelected
-                            ? 'bg-[#181B22] border-[#BBCCD7]/40 text-white shadow-md'
+                            ? 'bg-[#181B22] border-[#BBCCD7]/40 text-white'
                             : 'bg-[#121418] border-white/5 hover:border-white/15 text-slate-300'
                         }`}
                       >
@@ -294,7 +294,7 @@ export const InquiryTrackerModal: React.FC<InquiryTrackerModalProps> = ({
                       <button
                         type="button"
                         onClick={() => handleLaunchWhatsApp(selectedInquiry)}
-                        className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs uppercase tracking-widest font-semibold transition-all cursor-pointer shadow-lg active:scale-95"
+                        className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs uppercase tracking-widest font-semibold transition-all cursor-pointer active:scale-95"
                       >
                         <MessageSquare className="w-4 h-4" />
                         <span>Open In WhatsApp</span>

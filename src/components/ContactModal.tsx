@@ -372,7 +372,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                             onClick={() => setPreferredDropOff(opt)}
                             className={`p-3.5 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between text-xs ${
                               isSelected
-                                ? 'bg-[#181B24] border-emerald-500/70 text-white font-medium shadow-md'
+                                ? 'bg-[#181B24] border-emerald-500/70 text-white font-medium'
                                 : 'bg-[#0A0B0E] border-[#272B35] text-slate-400 hover:text-white'
                             }`}
                           >
@@ -463,7 +463,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                   <div className="pt-3">
                     <button
                       type="submit"
-                      className="w-full inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm uppercase tracking-widest font-semibold transition-all duration-200 cursor-pointer shadow-lg active:scale-98"
+                      className="w-full inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm uppercase tracking-widest font-semibold transition-all duration-200 cursor-pointer active:scale-98"
                     >
                       <span>CONTINUE TO REVIEW</span>
                       <ChevronRight className="w-4 h-4" />
@@ -561,7 +561,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                     <button
                       type="button"
                       onClick={handleConfirmAndLaunchWhatsApp}
-                      className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs uppercase tracking-widest font-semibold transition-all duration-200 cursor-pointer shadow-lg active:scale-95"
+                      className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs uppercase tracking-widest font-semibold transition-all duration-200 cursor-pointer active:scale-95"
                     >
                       <MessageSquare className="w-4 h-4" />
                       <span>SEND REQUEST VIA WHATSAPP</span>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock } from 'lucide-react';
+import { ArrowRight, CalendarDays, Clock } from 'lucide-react';
 import { getStoredInquiries } from '../services/inquiryAutomation';
 
 interface HeroSectionProps {
@@ -45,9 +45,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, onOpenT
     >
       {/* =========================================================================
           HERO STUDIO: PIXEL-PERFECT REPLICA MATCHING REFERENCE IMAGE
-          Rendered cleanly across all screen sizes without any artificial text layer on top.
-          Includes fully functional interactive hotspots, hover feedback, accessibility,
-          and direct integrations with booking flows.
+          Includes image-aligned interactive hotspots and native CTA buttons.
+          Keyboard focus stays visible without mouse hover outlines or shadow effects.
          ========================================================================= */}
       <div className="relative w-full max-w-[1656px] mx-auto aspect-[1656/950] overflow-hidden">
         {/* Reference Visual Design */}
@@ -86,7 +85,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, onOpenT
           type="button"
           onClick={scrollToTop}
           aria-label="Calgary Premium Auto Detailing Home"
-          className="absolute left-[6.04%] top-[1.8%] w-[14.5%] h-[5.6%] cursor-pointer rounded-lg hover:bg-white/5 transition-colors focus:outline-none focus:ring-1 focus:ring-[#C59B4E]"
+          className="absolute left-[6.04%] top-[1.8%] w-[14.5%] h-[5.6%] cursor-pointer rounded-lg hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C59B4E]"
           title="Calgary Premium Auto Detailing"
         />
 
@@ -95,42 +94,42 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, onOpenT
           type="button"
           onClick={scrollToTop}
           aria-label="Navigate to Home"
-          className="absolute left-[29.59%] top-[3.2%] w-[3.5%] h-[3.8%] cursor-pointer rounded hover:bg-white/10 transition-colors focus:outline-none"
+          className="absolute left-[29.59%] top-[3.2%] w-[3.5%] h-[3.8%] cursor-pointer rounded focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C59B4E]"
           title="Home"
         />
         <button
           type="button"
           onClick={() => scrollTo('services')}
           aria-label="Navigate to Services"
-          className="absolute left-[35.0%] top-[3.2%] w-[5.0%] h-[3.8%] cursor-pointer rounded hover:bg-white/10 transition-colors focus:outline-none"
+          className="absolute left-[35.0%] top-[3.2%] w-[5.0%] h-[3.8%] cursor-pointer rounded focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C59B4E]"
           title="Services"
         />
         <button
           type="button"
           onClick={() => scrollTo('services')}
           aria-label="Navigate to Packages"
-          className="absolute left-[42.5%] top-[3.2%] w-[5.5%] h-[3.8%] cursor-pointer rounded hover:bg-white/10 transition-colors focus:outline-none"
+          className="absolute left-[42.5%] top-[3.2%] w-[5.5%] h-[3.8%] cursor-pointer rounded focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C59B4E]"
           title="Packages"
         />
         <button
           type="button"
           onClick={() => scrollTo('gallery')}
           aria-label="Navigate to Gallery"
-          className="absolute left-[50.8%] top-[3.2%] w-[4.8%] h-[3.8%] cursor-pointer rounded hover:bg-white/10 transition-colors focus:outline-none"
+          className="absolute left-[50.8%] top-[3.2%] w-[4.8%] h-[3.8%] cursor-pointer rounded focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C59B4E]"
           title="Gallery"
         />
         <button
           type="button"
           onClick={() => scrollTo('about')}
           aria-label="Navigate to About"
-          className="absolute left-[58.0%] top-[3.2%] w-[4.0%] h-[3.8%] cursor-pointer rounded hover:bg-white/10 transition-colors focus:outline-none"
+          className="absolute left-[58.0%] top-[3.2%] w-[4.0%] h-[3.8%] cursor-pointer rounded focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C59B4E]"
           title="About"
         />
         <button
           type="button"
           onClick={() => scrollTo('contact')}
           aria-label="Navigate to Contact"
-          className="absolute left-[64.0%] top-[3.2%] w-[5.0%] h-[3.8%] cursor-pointer rounded hover:bg-white/10 transition-colors focus:outline-none"
+          className="absolute left-[64.0%] top-[3.2%] w-[5.0%] h-[3.8%] cursor-pointer rounded focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C59B4E]"
           title="Contact"
         />
 
@@ -139,7 +138,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, onOpenT
           type="button"
           onClick={() => onOpenBooking()}
           aria-label="Book Detailing Appointment"
-          className="absolute left-[82.6%] top-[3.2%] w-[11.6%] h-[5.2%] cursor-pointer rounded-full border border-transparent hover:border-[#C59B4E] hover:bg-[#C59B4E]/15 hover:shadow-[0_0_20px_rgba(197,155,78,0.4)] active:scale-95 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#C59B4E]"
+          className="absolute left-[82.6%] top-[3.2%] w-[11.6%] h-[5.2%] cursor-pointer rounded-full hover:bg-[#C59B4E]/10 active:scale-95 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C59B4E]"
           title="Book Your Detail"
         />
 
@@ -149,7 +148,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, onOpenT
             <button
               type="button"
               onClick={onOpenTracker}
-              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-emerald-500/40 bg-[#0A0C10]/90 backdrop-blur-md text-emerald-400 text-[11px] font-semibold uppercase tracking-wider hover:bg-emerald-500/20 transition-all cursor-pointer shadow-lg"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-emerald-500/40 bg-[#0A0C10]/90 backdrop-blur-md text-emerald-400 text-[11px] font-semibold uppercase tracking-wider hover:bg-emerald-500/20 transition-all cursor-pointer"
               title="View your saved inquiries"
             >
               <Clock className="w-3 h-3" />
@@ -163,25 +162,29 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, onOpenT
           type="button"
           onClick={() => scrollTo('services')}
           aria-label="View Detailing Packages"
-          className="absolute left-[37.4%] top-[43.1%] w-[13.2%] h-[5.2%] cursor-pointer rounded-full hover:shadow-[0_0_25px_rgba(215,154,59,0.65)] hover:brightness-110 active:scale-95 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-400"
-          title="View Packages"
-        />
+          className="absolute left-[37.4%] top-[43.1%] w-[13.2%] h-[5.2%] inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-b from-[#E4B04A] via-[#C9862B] to-[#E6B34E] text-white text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.12em] hover:brightness-105 transition-[filter] duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-300"
+        >
+          <span>View Packages</span>
+          <ArrowRight className="w-3 h-3" aria-hidden="true" />
+        </button>
 
         {/* 5. Center Dark Button: "BOOK NOW [calendar]" */}
         <button
           type="button"
           onClick={() => onOpenBooking()}
           aria-label="Book Now Appointment"
-          className="absolute left-[51.4%] top-[43.1%] w-[11.5%] h-[5.2%] cursor-pointer rounded-full border border-transparent hover:border-white/50 hover:bg-white/10 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] active:scale-95 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
-          title="Book Now"
-        />
+          className="absolute left-[51.4%] top-[43.1%] w-[11.5%] h-[5.2%] inline-flex items-center justify-center gap-2 rounded-full bg-[#111316] text-white text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.12em] hover:brightness-110 transition-[filter] duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-300"
+        >
+          <span>Book Now</span>
+          <CalendarDays className="w-3 h-3" aria-hidden="true" />
+        </button>
 
         {/* 6. Right Column Feature 1: "DETAILING & PROTECTION" */}
         <button
           type="button"
           onClick={() => onOpenBooking('Detailing & Protection')}
           aria-label="Explore Detailing & Protection"
-          className="absolute left-[84.8%] top-[29.8%] w-[12.0%] h-[7.8%] cursor-pointer rounded-xl hover:bg-white/5 hover:border hover:border-[#C59B4E]/30 transition-all duration-200 text-left p-2 focus:outline-none"
+          className="absolute left-[84.8%] top-[29.8%] w-[12.0%] h-[7.8%] cursor-pointer rounded-xl text-left p-2 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C59B4E]"
           title="Detailing & Protection"
         />
 
@@ -190,7 +193,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, onOpenT
           type="button"
           onClick={() => onOpenBooking('Interior & Exterior Care')}
           aria-label="Explore Interior and Exterior Care"
-          className="absolute left-[84.8%] top-[40.8%] w-[12.0%] h-[7.8%] cursor-pointer rounded-xl hover:bg-white/5 hover:border hover:border-[#C59B4E]/30 transition-all duration-200 text-left p-2 focus:outline-none"
+          className="absolute left-[84.8%] top-[40.8%] w-[12.0%] h-[7.8%] cursor-pointer rounded-xl text-left p-2 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C59B4E]"
           title="Interior + Exterior Care"
         />
 
@@ -199,7 +202,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, onOpenT
           type="button"
           onClick={() => onOpenBooking('Bespoke Care')}
           aria-label="Explore Bespoke Vehicle Detailing"
-          className="absolute left-[84.8%] top-[51.8%] w-[12.0%] h-[7.8%] cursor-pointer rounded-xl hover:bg-white/5 hover:border hover:border-[#C59B4E]/30 transition-all duration-200 text-left p-2 focus:outline-none"
+          className="absolute left-[84.8%] top-[51.8%] w-[12.0%] h-[7.8%] cursor-pointer rounded-xl text-left p-2 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#C59B4E]"
           title="Built Around Your Vehicle"
         />
 
@@ -209,7 +212,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, onOpenT
           type="button"
           onClick={() => onOpenBooking('Exterior Detailing')}
           aria-label="Book Exterior Detail"
-          className="absolute left-[7.0%] top-[84.8%] w-[21.5%] h-[10.8%] cursor-pointer rounded-2xl hover:bg-white/5 hover:shadow-[0_0_20px_rgba(197,155,78,0.25)] transition-all duration-200 focus:outline-none"
+          className="absolute left-[7.0%] top-[84.8%] w-[21.5%] h-[10.8%] cursor-pointer rounded-2xl hover:bg-white/5 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C59B4E]"
           title="Exterior Detail: Deep clean, decontamination & paint protection"
         />
 
@@ -218,7 +221,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, onOpenT
           type="button"
           onClick={() => onOpenBooking('Interior Detailing')}
           aria-label="Book Interior Detail"
-          className="absolute left-[28.7%] top-[84.8%] w-[21.5%] h-[10.8%] cursor-pointer rounded-2xl hover:bg-white/5 hover:shadow-[0_0_20px_rgba(197,155,78,0.25)] transition-all duration-200 focus:outline-none"
+          className="absolute left-[28.7%] top-[84.8%] w-[21.5%] h-[10.8%] cursor-pointer rounded-2xl hover:bg-white/5 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C59B4E]"
           title="Interior Detail: Thorough cleaning for a fresh, like-new feel"
         />
 
@@ -227,7 +230,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, onOpenT
           type="button"
           onClick={() => onOpenBooking('Ceramic Coating')}
           aria-label="Book Ceramic Coating"
-          className="absolute left-[50.2%] top-[84.8%] w-[21.5%] h-[10.8%] cursor-pointer rounded-2xl hover:bg-white/5 hover:shadow-[0_0_20px_rgba(197,155,78,0.25)] transition-all duration-200 focus:outline-none"
+          className="absolute left-[50.2%] top-[84.8%] w-[21.5%] h-[10.8%] cursor-pointer rounded-2xl hover:bg-white/5 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C59B4E]"
           title="Ceramic Coating: Long-lasting protection with unmatched shine"
         />
 
@@ -236,7 +239,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking, onOpenT
           type="button"
           onClick={() => onOpenBooking('Wheel & Tyre Care')}
           aria-label="Book Wheel and Tyre Care"
-          className="absolute left-[71.6%] top-[84.8%] w-[21.5%] h-[10.8%] cursor-pointer rounded-2xl hover:bg-white/5 hover:shadow-[0_0_20px_rgba(197,155,78,0.25)] transition-all duration-200 focus:outline-none"
+          className="absolute left-[71.6%] top-[84.8%] w-[21.5%] h-[10.8%] cursor-pointer rounded-2xl hover:bg-white/5 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C59B4E]"
           title="Wheel & Tyre Care: Restore, protect and keep them looking sharp"
         />
       </div>

@@ -112,12 +112,13 @@ const ShowcaseCard: React.FC<ShowcaseCardProps> = ({
   return (
     <div
       ref={containerRef}
-      className="min-h-[720px] md:h-[85vh] flex items-start justify-center relative"
+      className="min-h-[760px] md:h-[85vh] flex items-start justify-center relative"
     >
       <motion.div
         style={{
           top: `calc(5.5rem + ${index * 28}px)`,
           scale,
+          zIndex: index + 1,
         }}
         className="sticky w-full max-w-6xl rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8 shadow-2xl overflow-hidden relative"
       >

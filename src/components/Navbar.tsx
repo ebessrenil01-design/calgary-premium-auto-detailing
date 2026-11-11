@@ -72,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenTracker, on
           <button
             type="button"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex flex-col items-center sm:items-start text-left cursor-pointer group bg-transparent border-none p-0 focus:outline-none"
+            className="flex flex-col items-center sm:items-start text-left cursor-pointer group bg-transparent border-none p-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D7E2EA]"
             aria-label="Calgary Premium Auto Detailing Homepage"
           >
             {/* Elegant Gold Mountain Outline Icon matching Reference */}
@@ -176,7 +176,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenTracker, on
             <button
               type="button"
               onClick={onOpenBooking}
-              className="inline-flex items-center gap-2 px-5 sm:px-6 py-2 rounded-full border border-[#C59B4E] hover:border-[#E2AC4B] hover:bg-[#C59B4E]/10 active:scale-95 text-white font-semibold text-xs uppercase tracking-widest transition-all duration-200 cursor-pointer shadow-md"
+              className="inline-flex items-center gap-2 px-5 sm:px-6 py-2 rounded-full border border-[#C59B4E] hover:border-[#E2AC4B] hover:bg-[#C59B4E]/10 active:scale-95 text-white font-semibold text-xs uppercase tracking-widest transition-all duration-200 cursor-pointer"
             >
               <span>BOOK NOW</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#C59B4E] stroke-[2.2]" />
@@ -205,7 +205,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenTracker, on
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none cursor-pointer"
+              className="p-2 rounded-xl bg-white/5 border border-white/10 text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D7E2EA] cursor-pointer"
               aria-label="Toggle navigation menu"
               aria-expanded={mobileMenuOpen}
             >
@@ -260,7 +260,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenTracker, on
                 setMobileMenuOpen(false);
                 onOpenBooking();
               }}
-              className="w-full py-3.5 rounded-full bg-[#D7E2EA] text-[#0C0C0C] font-bold text-xs uppercase tracking-widest text-center shadow-lg"
+              className="w-full py-3.5 rounded-full bg-[#D7E2EA] text-[#0C0C0C] font-bold text-xs uppercase tracking-widest text-center"
             >
               Book Detailing Enquiry
             </button>

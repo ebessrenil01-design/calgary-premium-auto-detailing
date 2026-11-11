@@ -202,7 +202,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ onOpen
               <button
                 type="button"
                 onClick={onOpenBooking}
-                className="px-6 py-3 rounded-full bg-[#D7E2EA] hover:bg-white text-[#0C0C0C] font-semibold text-xs uppercase tracking-wider transition-all duration-200 cursor-pointer shadow-md shrink-0 active:scale-95"
+                className="px-6 py-3 rounded-full bg-[#D7E2EA] hover:bg-white text-[#0C0C0C] font-semibold text-xs uppercase tracking-wider transition-all duration-200 cursor-pointer shrink-0 active:scale-95"
               >
                 Schedule Vehicle Assessment
               </button>

@@ -339,7 +339,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               <button
                 type="button"
                 onClick={handleDirectWhatsApp}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs uppercase tracking-widest font-semibold transition-all duration-200 cursor-pointer shadow-lg active:scale-95 whitespace-nowrap"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs uppercase tracking-widest font-semibold transition-all duration-200 cursor-pointer active:scale-95 whitespace-nowrap"
               >
                 <MessageSquare className="w-4 h-4" />
                 <span>REQUEST APPOINTMENT ON WHATSAPP</span>

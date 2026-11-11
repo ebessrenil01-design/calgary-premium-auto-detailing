@@ -200,7 +200,7 @@ export const LegalCenterModal: React.FC<LegalCenterModalProps> = ({
                   }}
                   className={`inline-flex items-center gap-2 px-3.5 py-2 rounded-full text-xs uppercase tracking-wider font-semibold whitespace-nowrap transition-all cursor-pointer ${
                     isActive
-                      ? 'bg-[#D7E2EA] text-[#0C0C0C] shadow-md'
+                      ? 'bg-[#D7E2EA] text-[#0C0C0C]'
                       : 'bg-white/5 text-slate-400 hover:text-white hover:bg-white/10'
                   }`}
                 >

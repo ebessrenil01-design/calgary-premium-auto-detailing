@@ -275,7 +275,7 @@ export const StoragePreferencesModal: React.FC<StoragePreferencesModalProps> = (
               <button
                 type="button"
                 onClick={handleSavePreferences}
-                className="w-full sm:w-auto px-6 py-2.5 rounded-full bg-[#D7E2EA] hover:bg-white text-[#0C0C0C] text-xs font-bold uppercase tracking-wider transition-all cursor-pointer shadow-md"
+                className="w-full sm:w-auto px-6 py-2.5 rounded-full bg-[#D7E2EA] hover:bg-white text-[#0C0C0C] text-xs font-bold uppercase tracking-wider transition-all cursor-pointer"
               >
                 Save Preferences
               </button>

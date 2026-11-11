@@ -141,7 +141,7 @@ export const GallerySection: React.FC = () => {
                     href={getWhatsAppUrl(activeItem.category)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#25D366] text-black font-bold text-xs uppercase tracking-wider hover:bg-[#20ba5a] transition-colors shadow-lg"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#25D366] text-black font-bold text-xs uppercase tracking-wider hover:bg-[#20ba5a] transition-colors"
                   >
                     <MessageSquare className="w-4 h-4 fill-black" />
                     <span>Enquire on WhatsApp</span>
